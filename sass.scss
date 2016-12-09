@@ -1,14 +1,34 @@
-$header-height: 500px;
+$brand-default: #373a3c;
+$headerHeight: 500px;
 
-.intro-header {
-    height: $header-height;
-    background: url('img/fog.jpg');
-    background-size: cover;
+.btn-outline-default, .btn-outline-default:focus {
+    color: inherit;
+    border: 1px solid;
+    border-radius: .3rem;
+
+    &:hover {
+        color: white;
+        background: $brand-default;
+        border-color: $brand-default;
+    }
+
+    &:active {
+        color: white;
+        background: darken($brand-default, 10%);
+    }
 }
 
-.vertical-center {
-    h1 {
-        padding-top: $header-height/2 - 80px;
-        text-align: center;
-    }
+.introHeader {
+    height: $headerHeight;
+    background: url('img/fog.jpg');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.verticalCenter {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
 }

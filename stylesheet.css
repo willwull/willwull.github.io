@@ -1,3 +1,9 @@
-.intro-header { height: 500px; background: url("img/fog.jpg"); background-size: cover; }
+.btn-outline-default, .btn-outline-default:focus { color: inherit; border: 1px solid; border-radius: .3rem; }
 
-.vertical-center h1 { padding-top: 170px; text-align: center; }
+.btn-outline-default:hover, .btn-outline-default:focus:hover { color: white; background: #373a3c; border-color: #373a3c; }
+
+.btn-outline-default:active, .btn-outline-default:focus:active { color: white; background: #1f2021; }
+
+.introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; display: flex; align-items: center; }
+
+.verticalCenter { width: 100%; padding: 0 20px; text-align: center; }
