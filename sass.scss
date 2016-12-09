@@ -5,6 +5,7 @@ $headerHeight: 500px;
     color: inherit;
     border: 1px solid;
     border-radius: .3rem;
+    transition: 300ms all;
 
     &:hover {
         color: white;
@@ -18,17 +19,30 @@ $headerHeight: 500px;
     }
 }
 
+.navbar-light {
+    background: rgba(white ,0.5);
+}
+
 .introHeader {
     height: $headerHeight;
     background: url('img/fog.jpg');
     background-size: cover;
+    background-position: center;
 
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .verticalCenter {
     width: 100%;
     padding: 0 20px;
     text-align: center;
+}
+
+footer {
+    padding: 50px 0;
+    background: $brand-default;
+    color: white;
+    margin-top: 50px;
 }

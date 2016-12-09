@@ -1,9 +1,13 @@
-.btn-outline-default, .btn-outline-default:focus { color: inherit; border: 1px solid; border-radius: .3rem; }
+.btn-outline-default, .btn-outline-default:focus { color: inherit; border: 1px solid; border-radius: .3rem; transition: 300ms all; }
 
 .btn-outline-default:hover, .btn-outline-default:focus:hover { color: white; background: #373a3c; border-color: #373a3c; }
 
 .btn-outline-default:active, .btn-outline-default:focus:active { color: white; background: #1f2021; }
 
-.introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; display: flex; align-items: center; }
+.navbar-light { background: rgba(255, 255, 255, 0.5); }
+
+.introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; margin-bottom: 50px; }
 
 .verticalCenter { width: 100%; padding: 0 20px; text-align: center; }
+
+footer { padding: 50px 0; background: #373a3c; color: white; margin-top: 50px; }
