@@ -1,11 +1,3 @@
-html, body {
-  margin: 0;
-  padding: 0; }
+.intro-header { height: 500px; background: url("img/fog.jpg"); background-size: cover; }
 
-body {
-  font-size: 12px; }
-
-h1 {
-  font-size: 3em; }
-
-/*# sourceMappingURL=stylesheet.css.map */
+.vertical-center h1 { padding-top: 170px; text-align: center; }

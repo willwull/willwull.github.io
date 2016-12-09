@@ -1,9 +1,14 @@
-@import "reset";
+$header-height: 500px;
 
-body {
-    font-size: 12px;
+.intro-header {
+    height: $header-height;
+    background: url('img/fog.jpg');
+    background-size: cover;
 }
 
-h1 {
-    font-size: 3em;
+.vertical-center {
+    h1 {
+        padding-top: $header-height/2 - 80px;
+        text-align: center;
+    }
 }
