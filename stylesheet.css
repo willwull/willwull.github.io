@@ -11,3 +11,5 @@
 .verticalCenter { width: 100%; padding: 0 20px; text-align: center; }
 
 footer { padding: 50px 0; background: #373a3c; color: white; margin-top: 50px; }
+
+footer a, footer a:hover, footer a:active, footer a:focus { color: inherit; }

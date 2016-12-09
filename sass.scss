@@ -45,4 +45,8 @@ footer {
     background: $brand-default;
     color: white;
     margin-top: 50px;
+
+    a, a:hover, a:active, a:focus {
+        color: inherit;
+    }
 }
