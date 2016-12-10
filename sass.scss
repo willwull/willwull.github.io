@@ -1,6 +1,10 @@
 $brand-default: #373a3c;
 $headerHeight: 500px;
 
+.fancyFont {
+    font-family: 'Permanent Marker', cursive;
+}
+
 .btn-outline-default, .btn-outline-default:focus {
     color: inherit;
     border: 1px solid;
@@ -31,6 +35,14 @@ $headerHeight: 500px;
 
     display: flex;
     align-items: center;
+
+    h1 {
+        font-size: 5rem;
+        background: rgba(white, 0.8);
+        max-width: 700px;
+        padding: 5px;
+        margin: 0 auto;
+    }
 }
 
 .verticalCenter {
@@ -66,7 +78,7 @@ $headerHeight: 500px;
     background-size: cover;
     background-position: center;
     color: white;
-    height: 500px;
+    font-size: 2rem;
 }
 
 footer {

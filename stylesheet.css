@@ -1,3 +1,5 @@
+.fancyFont { font-family: 'Permanent Marker', cursive; }
+
 .btn-outline-default, .btn-outline-default:focus { color: inherit; border: 1px solid; border-radius: .3rem; transition: 300ms all; }
 
 .btn-outline-default:hover, .btn-outline-default:focus:hover { color: white; background: #373a3c; border-color: #373a3c; }
@@ -8,13 +10,15 @@
 
 .introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; }
 
+.introHeader h1 { font-size: 5rem; background: rgba(255, 255, 255, 0.8); max-width: 700px; padding: 5px; margin: 0 auto; }
+
 .verticalCenter { width: 100%; padding: 0 20px; text-align: center; }
 
 .containerPanel { padding-top: 50px; padding-bottom: 50px; font-size: 24px; }
 
 #languages { width: 100%; color: white; font-size: 2rem; /*--Gradient background--*/ background: #e64a55; /* Old browsers */ background: -moz-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #e64a55), color-stop(100%, #f67c6f)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* IE10+ */ background: linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64a55', endColorstr='#f67c6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
 
-#photoPanel { background: url("img/we.jpg"); background-size: cover; background-position: center; color: white; height: 500px; }
+#photoPanel { background: url("img/we.jpg"); background-size: cover; background-position: center; color: white; font-size: 2rem; }
 
 footer { padding: 50px 0; background: #373a3c; color: white; }
 
