@@ -14,6 +14,8 @@
 
 #languages { width: 100%; color: white; font-size: 2rem; /*--Gradient background--*/ background: #e64a55; /* Old browsers */ background: -moz-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #e64a55), color-stop(100%, #f67c6f)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* IE10+ */ background: linear-gradient(45deg, #e64a55 0%, #f67c6f 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64a55', endColorstr='#f67c6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
 
+#design { background: url("img/we.jpg"); background-size: cover; background-position: center; color: white; }
+
 footer { padding: 50px 0; background: #373a3c; color: white; }
 
 footer a, footer a:hover, footer a:active, footer a:focus { color: inherit; }

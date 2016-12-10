@@ -61,6 +61,13 @@ $headerHeight: 500px;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64a55', endColorstr='#f67c6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+#design {
+    background: url('img/we.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
 footer {
     padding: 50px 0;
     background: $brand-default;
