@@ -31,7 +31,6 @@ $headerHeight: 500px;
 
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .verticalCenter {
@@ -40,11 +39,30 @@ $headerHeight: 500px;
     text-align: center;
 }
 
+.containerPanel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#languages {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+
+    background: rgba(68,196,164,1);
+    background: -moz-linear-gradient(45deg, rgba(68,196,164,1) 0%, rgba(166,245,225,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(68,196,164,1)), color-stop(100%, rgba(166,245,225,1)));
+    background: -webkit-linear-gradient(45deg, rgba(68,196,164,1) 0%, rgba(166,245,225,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(68,196,164,1) 0%, rgba(166,245,225,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(68,196,164,1) 0%, rgba(166,245,225,1) 100%);
+    background: linear-gradient(45deg, rgba(68,196,164,1) 0%, rgba(166,245,225,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c4a4', endColorstr='#a6f5e1', GradientType=1 );
+}
+
 footer {
     padding: 50px 0;
     background: $brand-default;
     color: white;
-    margin-top: 50px;
 
     a, a:hover, a:active, a:focus {
         color: inherit;

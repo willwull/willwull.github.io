@@ -6,10 +6,14 @@
 
 .navbar-light { background: rgba(255, 255, 255, 0.5); }
 
-.introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; margin-bottom: 50px; }
+.introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; }
 
 .verticalCenter { width: 100%; padding: 0 20px; text-align: center; }
 
-footer { padding: 50px 0; background: #373a3c; color: white; margin-top: 50px; }
+.containerPanel { padding-top: 50px; padding-bottom: 50px; }
+
+#languages { width: 100%; color: white; font-size: 2rem; background: #44c4a4; background: -moz-linear-gradient(45deg, #44c4a4 0%, #a6f5e1 100%); background: -webkit-gradient(left bottom, right top, color-stop(0%, #44c4a4), color-stop(100%, #a6f5e1)); background: -webkit-linear-gradient(45deg, #44c4a4 0%, #a6f5e1 100%); background: -o-linear-gradient(45deg, #44c4a4 0%, #a6f5e1 100%); background: -ms-linear-gradient(45deg, #44c4a4 0%, #a6f5e1 100%); background: linear-gradient(45deg, #44c4a4 0%, #a6f5e1 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c4a4', endColorstr='#a6f5e1', GradientType=1 ); }
+
+footer { padding: 50px 0; background: #373a3c; color: white; }
 
 footer a, footer a:hover, footer a:active, footer a:focus { color: inherit; }
