@@ -4,7 +4,7 @@
 
 .btn-outline-default:active, .btn-outline-default:focus:active { color: white; background: #1f2021; }
 
-.navbar-light { background: rgba(255, 255, 255, 0.5); }
+.navbar-light { background: rgba(255, 255, 255, 0.8); }
 
 .introHeader { height: 500px; background: url("img/fog.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; }
 
