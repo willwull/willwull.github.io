@@ -61,11 +61,12 @@ $headerHeight: 500px;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64a55', endColorstr='#f67c6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-#design {
+#photoPanel {
     background: url('img/we.jpg');
     background-size: cover;
     background-position: center;
     color: white;
+    height: 500px;
 }
 
 footer {
