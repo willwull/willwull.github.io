@@ -50,7 +50,8 @@
 .containerPanel {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 24px;
+  font-size: 16px;
+  text-align: center;
 }
 
 #languages {
