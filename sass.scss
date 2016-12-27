@@ -1,5 +1,9 @@
 $brand-default: #373a3c;
-$headerHeight: 500px;
+$headerHeight: 100%;
+
+html, body {
+    height: 100%;
+}
 
 .fancyFont {
     font-family: 'Permanent Marker', cursive;

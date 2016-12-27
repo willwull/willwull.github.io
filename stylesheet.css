@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .fancyFont {
   font-family: 'Permanent Marker', cursive;
 }
@@ -25,7 +29,7 @@
 }
 
 .introHeader {
-  height: 500px;
+  height: 100%;
   background: url("img/fog.jpg");
   background-size: cover;
   background-position: center;
