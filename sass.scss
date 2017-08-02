@@ -86,6 +86,13 @@ html, body {
     font-size: 2rem;
 }
 
+#project-tll {
+    background: url('img/tll.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
 footer {
     padding: 50px 0;
     background: $brand-default;
