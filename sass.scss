@@ -1,104 +1,143 @@
-$brand-default: #373a3c;
-$headerHeight: 100%;
+:root {
+  --primary-color: #68DFB7;
+  --footer-color: #ED5B76;
+}
 
-html, body {
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 64px;
+}
+
+.nodisplay { display: none; }
+
+#main-header {
+  background: url("img/banner.jpg") left;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  --padding: 150px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+
+  h1 { font-size: 64px; }
+
+  #header-caret {
+    color: var(--primary-color);
+    animation: blinking-anim 400ms infinite alternate;
+  }
+
+  @keyframes blinking-anim {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+.section {
+  --padding: 60px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+#skills-row {
+  //display: flex;
+}
+
+.skill-card {
+  //flex: 1;
+  text-align: center;
+  padding: 0 10px;
+  height: 350px;
+  margin-bottom: 20px;
+
+  .inner-container {
     height: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+  }
+
+  .icon {
+    color: var(--primary-color);
+    font-size: 72px;
+  }
+
+  .name {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
 }
 
-.fancyFont {
-    font-family: 'Permanent Marker', cursive;
-}
-
-.btn-outline-default, .btn-outline-default:focus {
-    color: inherit;
-    border: 1px solid;
-    border-radius: .3rem;
-    transition: 300ms all;
-
-    &:hover {
-        color: white;
-        background: $brand-default;
-        border-color: $brand-default;
-    }
-
-    &:active {
-        color: white;
-        background: darken($brand-default, 10%);
-    }
-}
-
-.navbar-light {
-    background: rgba(white ,0.8);
-}
-
-.introHeader {
-    height: $headerHeight;
-    background: url('img/fog.jpg');
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-
-    h1 {
-        font-size: 5rem;
-        background: rgba(white, 0.8);
-        max-width: 700px;
-        padding: 5px;
-        margin: 0 auto;
-    }
-}
-
-.verticalCenter {
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.containerPanel {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 16px;
-    text-align: center;
-}
-
-#languages {
-    width: 100%;
-    color: white;
-    font-size: 2rem;
-
-	/*--Gradient background--*/
-	background: #e64a55; /* Old browsers */
-	background: -moz-linear-gradient(45deg,  #e64a55 0%, #f67c6f 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#e64a55), color-stop(100%,#f67c6f)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  #e64a55 0%,#f67c6f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  #e64a55 0%,#f67c6f 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  #e64a55 0%,#f67c6f 100%); /* IE10+ */
-	background: linear-gradient(45deg,  #e64a55 0%,#f67c6f 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64a55', endColorstr='#f67c6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-#photoPanel {
-    background: url('img/we.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 2rem;
-}
-
-#project-tll {
-    background: url('img/tll.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+.cherry-blossom {
+  height: 600px;
+  background: url("img/cherryblossom.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
-    padding: 50px 0;
-    background: $brand-default;
-    color: white;
+  padding: 50px 0;
 
-    a, a:hover, a:active, a:focus {
-        color: inherit;
+  .footer-link {
+    text-align: center;
+
+    .icon {
+      font-size: 42px;
+      color: var(--footer-color);
     }
+
+    a {
+      color: var(--footer-color);
+      border-bottom: 1px dashed;
+      transition: 300ms all;
+
+      &:hover {
+        text-decoration: none;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
+
+// Bootstrap md upper breakpoint
+@media (max-width: 991px) {
+  #main-header {
+    text-align: center;
+    height: 450px;
+    h1 { font-size: 48px; }
+  }
+
+  .skill-card {
+    .icon { font-size: 52px; }
+    .name { font-size: 24px; }
+  }
+}
+
+// Bootstrap sm upper breakpoint
+// Skills single column
+@media (max-width: 767px) {
+  #main-header {
+    h1 { font-size: 36px; }
+  }
+
+  .skill-card {
+    height: auto;
+    margin-bottom: 10px;
+    .icon { font-size: 72px; }
+    .name { font-size: 32px; }
+  }
+
+  .cherry-blossom { height: 400px; }
+
+  footer {
+    .footer-link { margin-bottom: 30px; }
+  }
+}
+
+// Smallest iPhone
+@media (max-width: 320px) {
+  #main-header {
+    h1 { font-size: 24px; }
+  }
 }
