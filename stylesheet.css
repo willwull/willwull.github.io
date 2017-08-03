@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #68DFB7;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+}
+
+.nodisplay {
+  display: none;
+}
+
+#main-header {
+  background: url("img/banner.jpg") left;
+  color: white;
+  display: flex;
+  align-items: center;
+  --padding: 150px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+#main-header h1 {
+  font-size: 64px;
+}
+
+#main-header #header-caret {
+  color: var(--primary-color);
+  animation: blinking-anim 400ms infinite alternate;
+}
+
+@keyframes blinking-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  #main-header h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 512px) {
+  #main-header h1 {
+    font-size: 24px;
+  }
+}
