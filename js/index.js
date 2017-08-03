@@ -14,7 +14,6 @@ function updateHeaderText() {
   let i = 0;
   let headerInterval = setInterval(() => {
     let caret = document.getElementById("header-caret");
-    caret.classList.remove("nodisplay");
 
     if (i < texts.length) {
       let text = document.getElementById("header-interest");
