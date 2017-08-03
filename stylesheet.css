@@ -11,6 +11,12 @@ body {
 h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 64px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
 }
 
 .nodisplay {
