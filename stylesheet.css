@@ -27,8 +27,13 @@ h2 {
   opacity: 0;
 }
 
+.img-section {
+  background-attachment: fixed;
+}
+
 #main-header {
   background: url("img/banner.jpg") left;
+  background-attachment: fixed;
   color: white;
   display: flex;
   align-items: center;
@@ -99,6 +104,7 @@ h2 {
   background: url("img/cherryblossom.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 footer {
