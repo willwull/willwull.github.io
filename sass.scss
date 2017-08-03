@@ -1,5 +1,6 @@
 :root {
   --primary-color: #68DFB7;
+  --footer-color: #ED5B76;
 }
 
 h1 {
@@ -68,6 +69,37 @@ h1 {
   }
 }
 
+.cherry-blossom {
+  height: 600px;
+  background: url("img/cherryblossom.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  padding: 50px 0;
+
+  .footer-link {
+    text-align: center;
+
+    .icon {
+      font-size: 42px;
+      color: var(--footer-color);
+    }
+
+    a {
+      color: var(--footer-color);
+      border-bottom: 1px dashed;
+      transition: 300ms all;
+
+      &:hover {
+        text-decoration: none;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
+
 // Bootstrap md upper breakpoint
 @media (max-width: 991px) {
   #main-header {
@@ -94,6 +126,12 @@ h1 {
     margin-bottom: 10px;
     .icon { font-size: 72px; }
     .name { font-size: 32px; }
+  }
+
+  .cherry-blossom { height: 400px; }
+
+  footer {
+    .footer-link { margin-bottom: 30px; }
   }
 }
 
