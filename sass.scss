@@ -4,6 +4,7 @@
 
 h1 {
   font-family: 'Rubik', sans-serif;
+  font-size: 64px;
 }
 
 .nodisplay { display: none; }
@@ -31,10 +32,74 @@ h1 {
   }
 }
 
-@media (max-width: 1024px) {
-  #main-header { h1 { font-size: 48px; } }
+.section {
+  --padding: 60px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
-@media (max-width: 512px) {
-  #main-header { h1 { font-size: 24px; } }
+#skills-row {
+  //display: flex;
+}
+
+.skill-card {
+  //flex: 1;
+  text-align: center;
+  padding: 0 10px;
+  height: 350px;
+  margin-bottom: 20px;
+
+  .inner-container {
+    height: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+  }
+
+  .icon {
+    color: var(--primary-color);
+    font-size: 72px;
+  }
+
+  .name {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
+}
+
+// Bootstrap md upper breakpoint
+@media (max-width: 991px) {
+  #main-header {
+    text-align: center;
+    height: 450px;
+    h1 { font-size: 48px; }
+  }
+
+  .skill-card {
+    .icon { font-size: 52px; }
+    .name { font-size: 24px; }
+  }
+}
+
+// Bootstrap sm upper breakpoint
+// Skills single column
+@media (max-width: 767px) {
+  #main-header {
+    h1 { font-size: 36px; }
+  }
+
+  .skill-card {
+    height: auto;
+    margin-bottom: 10px;
+    .icon { font-size: 72px; }
+    .name { font-size: 32px; }
+  }
+}
+
+// Smallest iPhone
+@media (max-width: 320px) {
+  #main-header {
+    h1 { font-size: 24px; }
+  }
 }
