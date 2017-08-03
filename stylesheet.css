@@ -1,6 +1,11 @@
 :root {
   --primary-color: #68DFB7;
   --footer-color: #ED5B76;
+  --text-color: #222222;
+}
+
+body {
+  color: var(--text-color);
 }
 
 h1 {
@@ -10,6 +15,10 @@ h1 {
 
 .nodisplay {
   display: none;
+}
+
+.opacity0 {
+  opacity: 0;
 }
 
 #main-header {
@@ -26,8 +35,16 @@ h1 {
   font-size: 64px;
 }
 
+#main-header .selected-text {
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.7);
+}
+
 #main-header #header-caret {
   color: var(--primary-color);
+}
+
+#main-header .caret-anim {
   animation: blinking-anim 400ms infinite alternate;
 }
 

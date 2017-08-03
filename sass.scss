@@ -1,7 +1,10 @@
 :root {
   --primary-color: #68DFB7;
   --footer-color: #ED5B76;
+  --text-color: #222222;
 }
+
+body { color: var(--text-color); }
 
 h1 {
   font-family: 'Rubik', sans-serif;
@@ -9,6 +12,7 @@ h1 {
 }
 
 .nodisplay { display: none; }
+.opacity0 { opacity: 0; }
 
 #main-header {
   background: url("img/banner.jpg") left;
@@ -22,10 +26,14 @@ h1 {
 
   h1 { font-size: 64px; }
 
-  #header-caret {
-    color: var(--primary-color);
-    animation: blinking-anim 400ms infinite alternate;
+  .selected-text {
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.7);
   }
+
+  #header-caret { color: var(--primary-color); }
+
+  .caret-anim { animation: blinking-anim 400ms infinite alternate; }
 
   @keyframes blinking-anim {
     from { opacity: 0; }
