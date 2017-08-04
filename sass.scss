@@ -24,7 +24,7 @@ h2 {
 
 #main-header {
   background-image: url("img/banner.jpg");
-  background-position: left;
+  background-size: cover;
   color: white;
   display: flex;
   align-items: center;
@@ -94,6 +94,7 @@ h2 {
 .cherry-blossom {
   background-image: url("img/cherryblossom.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 footer {
