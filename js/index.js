@@ -9,7 +9,13 @@ function main() {
  * in real time sort of.
  */
 function updateHeaderText() {
-  let texts = ["design.", "programming.", "cliché headers.", "web dev.", "a lot of stuff."];
+  let texts = [
+    "graphic design.",
+    "programming.",
+    "making cliché headers.",
+    "web development.",
+    "doing a lot of stuff."
+  ];
   let target = document.getElementById("header-interest");
   let caret = document.getElementById("header-caret");
   let textIndex = 0;
