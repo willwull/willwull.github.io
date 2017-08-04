@@ -32,8 +32,8 @@ h2 {
 }
 
 #main-header {
-  background: url("img/banner.jpg") left;
-  background-attachment: fixed;
+  background-image: url("img/banner.jpg");
+  background-position: left;
   color: white;
   display: flex;
   align-items: center;
@@ -99,12 +99,14 @@ h2 {
   font-size: 32px;
 }
 
-.cherry-blossom {
-  height: 400px;
-  background: url("img/cherryblossom.jpg");
-  background-size: cover;
-  background-position: center;
+.img-section {
   background-attachment: fixed;
+  height: 400px;
+}
+
+.cherry-blossom {
+  background-image: url("img/cherryblossom.jpg");
+  background-position: center;
 }
 
 footer {
@@ -170,4 +172,9 @@ footer .footer-link a:hover {
   #main-header h1 {
     font-size: 24px;
   }
+}
+
+.ua-ios .img-section {
+  background-attachment: scroll;
+  background-size: cover;
 }

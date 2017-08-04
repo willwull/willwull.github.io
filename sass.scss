@@ -23,8 +23,8 @@ h2 {
 .img-section { background-attachment: fixed; }
 
 #main-header {
-  background: url("img/banner.jpg") left;
-  background-attachment: fixed;
+  background-image: url("img/banner.jpg");
+  background-position: left;
   color: white;
   display: flex;
   align-items: center;
@@ -86,12 +86,14 @@ h2 {
   }
 }
 
-.cherry-blossom {
-  height: 400px;
-  background: url("img/cherryblossom.jpg");
-  background-size: cover;
-  background-position: center;
+.img-section {
   background-attachment: fixed;
+  height: 400px;
+}
+
+.cherry-blossom {
+  background-image: url("img/cherryblossom.jpg");
+  background-position: center;
 }
 
 footer {
@@ -155,5 +157,13 @@ footer {
 @media (max-width: 320px) {
   #main-header {
     h1 { font-size: 24px; }
+  }
+}
+
+// use cssua to disable fixed backgrounds on iOS devices since it doesn't work
+.ua-ios {
+  .img-section {
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
