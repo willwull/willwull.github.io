@@ -1,4 +1,4 @@
-main();
+window.addEventListener("load", main);
 function main() {
   updateHeaderText();
 }
