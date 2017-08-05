@@ -98,9 +98,10 @@ h2 {
   .icon-container {
     @include center-child-both;
     .icon {
+      --icon-size: 150px;
       @include center-child-both;
-      width: 150px;
-      height: 150px;
+      width: var(--icon-size);
+      height: var(--icon-size);
       background: var(--accent-color);
       border-radius: 50%;
       font-size: 64px;
@@ -113,6 +114,10 @@ h2 {
   h3 {
     font-size: 16px;
     color: lighten(#454545, 25%);
+  }
+
+  .text {
+
   }
 }
 
@@ -180,6 +185,11 @@ footer {
 
   footer {
     .footer-link { margin-bottom: 30px; }
+  }
+
+  #coding-projects {
+    .icon { margin-bottom: 40px; }
+    .text { margin: 0 20px; }
   }
 }
 

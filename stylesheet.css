@@ -112,11 +112,12 @@ h2 {
 }
 
 #coding-projects .icon-container .icon {
+  --icon-size: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   background: var(--accent-color);
   border-radius: 50%;
   font-size: 64px;
@@ -202,6 +203,12 @@ footer .footer-link a:hover {
   }
   footer .footer-link {
     margin-bottom: 30px;
+  }
+  #coding-projects .icon {
+    margin-bottom: 40px;
+  }
+  #coding-projects .text {
+    margin: 0 20px;
   }
 }
 
