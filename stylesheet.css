@@ -1,7 +1,7 @@
 :root {
   --primary-color: #68DFB7;
   --footer-color: #ED5B76;
-  --text-color: #222222;
+  --text-color: #454545;
 }
 
 body {
@@ -12,6 +12,8 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 64px;
   font-weight: normal;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -33,7 +35,6 @@ h2 {
 
 #main-header {
   background-image: url("img/banner.jpg");
-  background-position: left;
   color: white;
   display: flex;
   align-items: center;
@@ -43,7 +44,8 @@ h2 {
 }
 
 #main-header h1 {
-  font-size: 64px;
+  font-size: 72px;
+  margin: 0;
 }
 
 #main-header .selected-text {
@@ -99,14 +101,63 @@ h2 {
   font-size: 32px;
 }
 
+#coding-projects {
+  --accent-color: #62A4EC;
+}
+
+#coding-projects .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#coding-projects .icon-container .icon {
+  --icon-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background: var(--accent-color);
+  border-radius: 50%;
+  font-size: 64px;
+  color: white;
+}
+
+#coding-projects h2 {
+  color: var(--accent-color);
+}
+
+#coding-projects h3 {
+  font-size: 16px;
+  color: #929292;
+}
+
+#coding-projects h3 b {
+  color: #5f5f5f;
+}
+
+#coding-projects .line {
+  height: 5px;
+  width: 50%;
+  max-width: 100px;
+  background-color: var(--accent-color);
+  margin: 40px auto 60px auto;
+}
+
 .img-section {
   background-attachment: fixed;
+  background-size: cover;
   height: 400px;
+}
+
+.watermelons {
+  background-image: url("img/watermelons.jpg");
 }
 
 .cherry-blossom {
   background-image: url("img/cherryblossom.jpg");
-  background-position: center;
 }
 
 footer {
@@ -165,6 +216,12 @@ footer .footer-link a:hover {
   }
   footer .footer-link {
     margin-bottom: 30px;
+  }
+  #coding-projects .icon {
+    margin-bottom: 40px;
+  }
+  #coding-projects .text {
+    margin: 0 20px;
   }
 }
 
