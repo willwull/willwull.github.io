@@ -109,6 +109,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 #coding-projects .icon-container .icon {
@@ -130,7 +131,19 @@ h2 {
 
 #coding-projects h3 {
   font-size: 16px;
-  color: #858585;
+  color: #929292;
+}
+
+#coding-projects h3 b {
+  color: #5f5f5f;
+}
+
+#coding-projects .line {
+  height: 5px;
+  width: 50%;
+  max-width: 100px;
+  background-color: var(--accent-color);
+  margin: 40px auto 60px auto;
 }
 
 .img-section {

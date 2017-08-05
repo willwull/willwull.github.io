@@ -97,6 +97,7 @@ h2 {
   --accent-color: #62A4EC;
   .icon-container {
     @include center-child-both;
+    height: 100%;
     .icon {
       --icon-size: 150px;
       @include center-child-both;
@@ -112,12 +113,17 @@ h2 {
   h2 { color: var(--accent-color); }
 
   h3 {
+    b { color: lighten(#454545, 10%); }
     font-size: 16px;
-    color: lighten(#454545, 25%);
+    color: lighten(#454545, 30%);
   }
 
-  .text {
-
+  .line {
+    height: 5px;
+    width: 50%;
+    max-width: 100px;
+    background-color: var(--accent-color);
+    margin: 40px auto 60px auto;
   }
 }
 
