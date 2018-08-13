@@ -1,7 +1,6 @@
-window.addEventListener("load", main);
-function main() {
+window.addEventListener("load", () => {
   updateHeaderText();
-}
+});
 
 /**
  * updateHeaderText
@@ -9,21 +8,21 @@ function main() {
  * in real time sort of.
  */
 function updateHeaderText() {
-  let texts = [
+  const texts = [
     "graphic design.",
     "programming.",
     "making cliché headers.",
     "web development.",
     "doing a lot of stuff."
   ];
-  let target = document.getElementById("header-interest");
-  let caret = document.getElementById("header-caret");
+  const target = document.getElementById("header-interest");
+  const caret = document.getElementById("header-caret");
   let textIndex = 0;
   let charIndex = 0;
-  let extraCycles = 25;
+  const extraCycles = 25;
   let hasSelected = false;
   let charHasCleared = false;
-  let updateInterval = setInterval(() => {
+  const updateInterval = setInterval(() => {
     if (textIndex < texts.length) {
       if (charIndex < texts[textIndex].length + extraCycles) {
         if (!hasSelected) {
